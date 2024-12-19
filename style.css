@@ -9,8 +9,20 @@
     flex-direction: column;
 }
 
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar img{
+    min-height: 50px;
+    margin-left: 20px;
+}
+
 nav{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     background-color: antiquewhite;
 }
@@ -23,8 +35,10 @@ nav a{
     display: flex;
     flex-grow: 1;
     justify-content: center;
+    align-items: center;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
+    margin-right: 20px;
 }
 
 nav a:hover{
@@ -40,6 +54,10 @@ nav a:hover{
 }
 
 /* first */
+.profileDiv{
+    display: flex;
+    flex-direction: row;
+}
 
 .first{
     background-color: blueviolet;
@@ -48,28 +66,30 @@ nav a:hover{
 }
 
 .name{
-    margin: 20px auto 10px auto;
     font-size: 2.4rem;
     color: white;
-    display: inline;
 }
 
 .first span{
    color: white;
+   
 }
 
-.profileDiv{
-    display: flex;
-}
 
 .profilePic{
-
     background-image: url('images/profile.png');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 200px;
     border-radius: 50%;
+    width: 200px;
+    
+}
 
+.nameDiscription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
 /* second */
