@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .container{
@@ -13,18 +13,22 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #00305a;
 }
 
 .navbar img{
     min-height: 50px;
     margin-left: 20px;
+    filter: invert(100%) sepia(7%) saturate(7437%) hue-rotate(181deg) brightness(121%) contrast(100%);
+    
+    
 }
 
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: antiquewhite;
+    background-color: #00305a;
 }
 
 nav a{
@@ -39,10 +43,12 @@ nav a{
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
     margin-right: 20px;
+    color: #cacaca;
 }
 
 nav a:hover{
-    background-color: aqua;
+    background-color: #004079;
+    color: white;
 }
 
 
@@ -60,7 +66,11 @@ nav a:hover{
 }
 
 .first{
-    background-color: blueviolet;
+    
+    background-image: url('images/background1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 10px 50px;
     flex-grow: 2;
 }
@@ -68,6 +78,7 @@ nav a:hover{
 .name{
     font-size: 2.4rem;
     color: white;
+    margin-bottom: 5px;
 }
 
 .first span{
@@ -78,11 +89,11 @@ nav a:hover{
 
 .profilePic{
     background-image: url('images/profile.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    min-width: 300px;
+    min-height: 300px;
+    background-position: center;
+    background-size: 400px;
     border-radius: 50%;
-    width: 200px;
-    
 }
 
 .nameDiscription{
@@ -90,12 +101,14 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    margin-left: 20px;
 }
 
 /* second */
 
 .second{
-    background-color: rgb(43, 137, 226);
+    background: rgb(2,0,36);
+background: linear-gradient(16deg, rgba(2,0,36,1) 0%, rgba(0,0,154,1) 100%);
     padding: 10px 50px;
     flex-grow: 1;
 }
@@ -112,7 +125,8 @@ nav a:hover{
 
 /* third */
 .third{
-    background-color: rgb(43, 226, 104);
+    background: rgb(2,0,36);
+background: linear-gradient(165deg, rgba(2,0,36,1) 0%, rgba(124,0,121,1) 100%);
     padding: 10px 50px;
     flex-grow: 1;
 }
