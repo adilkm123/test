@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 700;
+    padding:10px;
+    width: 100px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+nav a:hover{
+    background-color: aqua;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 300vh;
+    background-color: rgb(255, 163, 240);
+}
+
+/* first */
+
+.first{
+    background-color: blueviolet;
+    padding: 10px 50px;
+    flex-grow: 2;
+}
+
+.name{
+    margin: 20px auto 10px auto;
+    font-size: 2.4rem;
+    color: white;
+    display: inline;
+}
+
+.first span{
+   color: white;
+}
+
+.profileDiv{
+    display: flex;
+}
+
+.profilePic{
+
+    background-image: url('images/profile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    border-radius: 50%;
+
+}
+
+/* second */
+
+.second{
+    background-color: rgb(43, 137, 226);
+    padding: 10px 50px;
+    flex-grow: 1;
+}
+
+.second h2{
+    margin: 20px auto 10px auto;
+    color: white;
+}
+
+.second span{
+   color: white;
+}
+
+
+/* third */
+.third{
+    background-color: rgb(43, 226, 104);
+    padding: 10px 50px;
+    flex-grow: 1;
+}
+
+.third h2{
+    margin: 20px auto 10px auto;
+    color: white;
+}
+
+.third span{
+   color: white;
+}
+
+/* fourth */
+
+.fourth{
+    background-color: rgb(255, 0, 149);
+    padding: 10px 50px;
+    flex-grow: 1;
+}
+
+.fourth h2{
+    margin: 20px auto 10px auto;
+    color: white;
+}
+
+.fourth span{
+   color: white;
+}
