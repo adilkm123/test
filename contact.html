@@ -4,11 +4,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <style>
+    *{
+      margin:0;
+      padding: 0;
+    }
+    .container{
+      background-color: #288;
+      min-height: 100vh;
+    
+      padding: 30px 30px 10px 30px;
+    }
+    h1{
+      background-color: white;
+      color:#288;
+      padding: 10px;
+      font-weight: 700;
+      display: inline-block;
+      margin: 10px;
+     
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      max-width: 500px;
+    }
+    input{
+      padding-top: 10px;
+      margin-top: 10px;
+      color: white;
+      background: transparent;
+      border-top: none;
+      border-left:none;
+      border-right: none;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      outline: none;
+      font-weight: 600;
+    }
+    
+    input:focus{
+      border-bottom: 2px solid white;
+      
+    }
+    
+    input::placeholder{
+      color:#ccc;
+    }
+    input:focus::placeholder {
+    color: white;
+    }
+    
+    input[type="submit"]{
+      background-color: white;
+      color:#288;
+      font-weight: 900;
+      font-size: 1.2rem;
+      padding-left:20px;
+      padding-right: 20px;
+    }
+    form div{
+      display: flex;
+      justify-content: end;
+      margin-top: 20px
+    }
+    
+  </style>
+  <title>contact form</title>
 </head>
 
 <body>
-<h2>hello </h2>
+<div class="container">
+  <h1>Contact me</h1>
+  <form>
+    <input type="text" id="name" placeholder="Enter your Name">
+    <input type="email" id="email" placeholder="Enter your Email">
+    <input type="tel" id="phone" placeholder="Enter your Phone number">
+    <input type="text" id="message" placeholder="Enter your Message">
+    <div>
+    <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
 </body>
 
 </html>
