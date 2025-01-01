@@ -63,10 +63,10 @@ nav a:hover{
 .profileDiv{
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
 }
 
 .first{
-    
     background-image: url('images/background1.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -112,6 +112,25 @@ background: linear-gradient(16deg, rgba(2,0,36,1) 0%, rgba(0,0,154,1) 100%);
     padding: 10px 50px;
     flex-grow: 1;
 }
+
+.skillGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+
+.skillGrid div{
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+.second div{
+    width: 20px;
+    background-color: red;
+}
+
 
 .second h2{
     margin: 20px auto 10px auto;
